@@ -1,28 +1,35 @@
 <?php
 // Database connection
-$conn = new mysqli("localhost", "root", "", "appointment_db");
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "appointment_db";
+
+$conn = new mysqli($host, $user, $password, $database);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email_address'];
     $phone = $_POST['phone'];
     $category = $_POST['category'];
-    $date = $_POST['date'];
+    $appointment_date = $_POST['date']; // Use the correct column name
     $message = $_POST['message'];
 
-    // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO appointments (name, email, phone, category, date, message) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $name, $email, $phone, $category, $date, $message);
+    // Prepare SQL statement
+    $stmt = $conn->prepare("INSERT INTO appointments (name, email, phone, category, appointment_date, message) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssss", $name, $email, $phone, $category, $appointment_date, $message);
 
+    // Execute and check if successful
     if ($stmt->execute()) {
-        echo "Appointment booked successfully!";
+        echo "<script>alert('Appointment booked successfully!'); window.location.href='index.html';</script>";
     } else {
-        echo "Error: " . $stmt->error;
+        echo "<script>alert('Error: Unable to book appointment'); window.location.href='index.html';</script>";
     }
 
     // Close statement and connection
