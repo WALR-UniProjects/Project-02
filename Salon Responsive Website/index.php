@@ -207,7 +207,7 @@
                 suspendisse
               </p>
 
-              <form action="" class="appoin-form">
+              <form action="server.php" method="POST" class="appoin-form">
 
                 <div class="input-wrapper">
                   <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
