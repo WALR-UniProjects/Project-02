@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,11 +135,10 @@
             <li class="navbar-item">
               <a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a>
             </li>
-
+          
             <li class="navbar-item">
               <a href="about.html" class="navbar-link" data-nav-link>About</a>
             </li>
-            <br> <br>
 
           </ul>
         </nav>
@@ -147,8 +147,8 @@
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="index.html" class="btn has-before">
-          <span class="span">Appointment</span>
+        <a href="#locations" class="btn has-before">
+          <span class="span">Our Location</span>
 
           <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
         </a>
@@ -158,219 +158,106 @@
 
   </header>
 
-  
   <main>
     <article>
 
       <!-- 
-        - #PRICING
+        - #HERO
       -->
 
-      <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing"
-        style="background-image: url('./images/07.jpg')">
+      <section class="section hero has-before has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./images/12.jpg')">
         <div class="container">
 
-          <h2 class="h2 section-title text-center">Awesome Pricing Plan</h2> 
+          <h1 class="h1 hero-title">About Us</h1>
 
-          <p class="section-text text-center">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
+          <p class="hero-text">
+            Experience excellence in a truly luxurious atmosphere offering you the ultimate satisfaction 
+            in hair and beauty services with Salon Zero by Master Stylist Surith Rasantha who recognized worldwide as an international consultant and migrant stylist.
+            At Salon AURA, we take enormous pride in representing the highest standards in the hair industry.
+             We have confidence in excellence with a heart and our approach towards the hair, makeup, and other beauty
+              services are emulated and framed against a backdrop of clean-lined, industrial decor where new and unique creations are crafted, honed, and inspired by you, for you.
+            At Salon AURA, our committed group of beauticians, nails and skin specialists accompany innumerable long 
+            periods of involvement in the magnificence business. We endeavour to make each customer our best, whether
+             you are a new or returning client, our team of highly trained stylists are ready to make you look your absolute best.
+            "We want our salon to be a place where clients are treated with genuine warmth, a place where they can relax and feel good about themselves."
           </p>
 
-          <div class="pricing-tab-container">
+          <a href="servicees.html" class="btn has-before">
+            <span class="span">Explore Our Services</span>
 
-            <ul class="tab-filter">
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
 
-              <li>
-                <button class="filter-btn active" data-filter-btn="all">
-                  <div class="btn-icon">
-                    <i class="flaticon-beauty-salon" aria-hidden="true"></i>
-                  </div>
+        </div>
+      </section>
 
-                  <p class="btn-text">All Pricing</p>
-                </button>
-              </li>
+      <!-- 
+        - #LOCATIONS
+      -->
 
-              <li>
-                <button class="filter-btn" data-filter-btn="beauty-spa">
-                  <div class="btn-icon">
-                    <i class="flaticon-relax" aria-hidden="true"></i>
-                  </div>
+      <section class="section locations" id="locations" aria-label="locations">
+        <div class="container">
 
-                  <p class="btn-text">Beauty & Spa</p>
-                </button>
-              </li>
+          <h2 class="h2 section-title" style="text-align: center; color: rgb(247, 244, 237);">Our Locations</h2> <br><br>
 
-              <li>
-                <button class="filter-btn" data-filter-btn="body-treatments">
-                  <div class="btn-icon">
-                    <i class="flaticon-massage" aria-hidden="true"></i>
-                  </div>
+          <div class="map-section">
+            <img src="./images/13.jpg" alt="Map showing Salon Aura locations">
+          </div>
 
-                  <p class="btn-text">Body Treatments</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="face-washing">
-                  <div class="btn-icon">
-                    <i class="flaticon-spa" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Face Washing</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="meditations">
-                  <div class="btn-icon">
-                    <i class="flaticon-yoga" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Meditations</p>
-                </button>
-              </li>
-
-              <li>
-                <button class="filter-btn" data-filter-btn="shaving">
-                  <div class="btn-icon">
-                    <i class="flaticon-razor-blade" aria-hidden="true"></i>
-                  </div>
-
-                  <p class="btn-text">Shaving</p>
-                </button>
-              </li>
-
-            </ul>
-
-            <ul class="grid-list">
-
-
-              <li data-filter="face-washing">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Hair Color & Wash"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Hair Color & Wash</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="35">$35</data>
-
-                </div>
-              </li>
-
-              <li data-filter="body-treatments">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Body Massage"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Body Massage</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="56">$56</data>
-
-                </div>
-              </li>
-
-              <li data-filter="beauty-spa">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beauty & Spa"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Beauty & Spa</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="27">$27</data>
-
-                </div>
-              </li>
-
-              <li data-filter="face-washing">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-6.jpg" width="90" height="90" alt="Facial & Face Wash"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Facial & Face Wash</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="63">$63</data>
-
-                </div>
-              </li>
-
-              <li data-filter="body-treatments">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-7.jpg" width="90" height="90" alt="Backbone Massage"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Backbone Massage</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="43">$43</data>
-
-                </div>
-              </li>
-
-              <li data-filter="meditations">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-8.jpg" width="90" height="90" alt="Meditation & Massage"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Meditation & Massage</h3>
-
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
-                  </div>
-
-                  <data class="card-price" value="74">$74</data>
-
-                </div>
-              </li>
-
-            </ul>
-
+          <div class="locations-section">
+            <div class="location">
+              <h3>Boralesgamuwa</h3>
+              <p>102 1/1, Colombo Road, Rattanapitiya, Boralesgamuwa 10290</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 77 009 957</p>
+            </div>
+            <div class="location">
+              <h3>Thalawathugoda</h3>
+              <p>1112/2, Thalangama South, Battaramulla</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 77 660 225</p>
+            </div>
+            <div class="location">
+              <h3>Kotahena</h3>
+              <p>290 George R. De Silva Mawatha, Colombo 01300, Sri Lanka</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 76 650 010</p>
+            </div>
+            <div class="location">
+              <h3>Wattala</h3>
+              <p>1 Sri Wickrama Mawatha, Wattala 11300, Sri Lanka</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 77 055 055</p>
+            </div>
+            <div class="location">
+              <h3>Nugegoda</h3>
+              <p>389 High Level Rd, Nugegoda, Sri Lanka</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 11 282 052</p>
+            </div>
+            <div class="location">
+              <h3>Kiribathgoda</h3>
+              <p>71 Colombo - Kandy Rd, Kiribathgoda 11300, Sri Lanka</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 77 009 957</p>
+            </div>
+            <div class="location">
+              <h3>Kandana</h3>
+              <p>67 Negombo Rd, Kandana, Sri Lanka</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 77 712 017</p>
+            </div>
+            <div class="location">
+              <h3>Wellawatta</h3>
+              <p>4, 1/1 Collingwood Place, Colombo 00600, Sri Lanka</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 77 420 044</p>
+            </div>
+            <div class="location">
+              <h3>Dehiwala</h3>
+              <p>45/1 Hill St, Dehiwala-Mount Lavinia 10350, Sri Lanka</p>
+              <p><ion-icon name="call-outline"></ion-icon> +94 77 722 022</p>
+            </div>
           </div>
 
         </div>
       </section>
+
     </article>
   </main>
-
-
-
-
 
   <!-- 
     - #FOOTER
@@ -391,10 +278,8 @@
           <form action="" class="input-wrapper">
 
             <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
-
             <button type="submit" class="btn has-before">
               <span class="span">Subscribe Now</span>
-
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
 
@@ -561,11 +446,6 @@
     </div>
   </footer>
 
-
-
-
-
-
   <!-- 
     - #BACK TO TOP
   -->
@@ -573,10 +453,6 @@
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a>
-
-
-
-
 
   <!-- 
     - custom js link

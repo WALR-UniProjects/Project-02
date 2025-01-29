@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -138,8 +139,8 @@
             <li class="navbar-item">
               <a href="about.html" class="navbar-link" data-nav-link>About</a>
             </li>
+            <br> <br>
 
-    
           </ul>
         </nav>
 
@@ -152,135 +153,216 @@
 
           <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
         </a>
+
       </div>
     </div>
 
   </header>
+
   
   <main>
     <article>
+
       <!-- 
-        - #GALLERY
+        - #PRICING
       -->
 
-      <section class="section gallery" id="gallery" aria-label="photo gallery" style="background-image: url(./images/08.jpg);
-      background-size: cover;">
+      <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing"
+        style="background-image: url('./images/07.jpg')">
         <div class="container">
 
-          <div class="title-wrapper">
+          <h2 class="h2 section-title text-center">Awesome Pricing Plan</h2> 
 
-            <div>
-              <h2 class="h2 section-title" style="color: rgb(240, 164, 66);">Latest Photo Gallery</h2>
+          <p class="section-text text-center">
+            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
+          </p>
 
-              <p class="section-text">
-                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
-                suspendisse
-              </p>
-            </div>
+          <div class="pricing-tab-container">
 
-            <a href="#" class="btn has-before">
-              <span class="span">Explore More Gallery</span>
+            <ul class="tab-filter">
 
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
+              <li>
+                <button class="filter-btn active" data-filter-btn="all">
+                  <div class="btn-icon">
+                    <i class="flaticon-beauty-salon" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">All Pricing</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="beauty-spa">
+                  <div class="btn-icon">
+                    <i class="flaticon-relax" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Beauty & Spa</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="body-treatments">
+                  <div class="btn-icon">
+                    <i class="flaticon-massage" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Body Treatments</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="face-washing">
+                  <div class="btn-icon">
+                    <i class="flaticon-spa" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Face Washing</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="meditations">
+                  <div class="btn-icon">
+                    <i class="flaticon-yoga" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Meditations</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="shaving">
+                  <div class="btn-icon">
+                    <i class="flaticon-razor-blade" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Shaving</p>
+                </button>
+              </li>
+
+            </ul>
+
+            <ul class="grid-list">
+
+
+              <li data-filter="face-washing">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Hair Color & Wash"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Hair Color & Wash</h3>
+
+                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                  </div>
+
+                  <data class="card-price" value="35">$35</data>
+
+                </div>
+              </li>
+
+              <li data-filter="body-treatments">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Body Massage"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Body Massage</h3>
+
+                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                  </div>
+
+                  <data class="card-price" value="56">$56</data>
+
+                </div>
+              </li>
+
+              <li data-filter="beauty-spa">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Beauty & Spa</h3>
+
+                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                  </div>
+
+                  <data class="card-price" value="27">$27</data>
+
+                </div>
+              </li>
+
+              <li data-filter="face-washing">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-6.jpg" width="90" height="90" alt="Facial & Face Wash"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Facial & Face Wash</h3>
+
+                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                  </div>
+
+                  <data class="card-price" value="63">$63</data>
+
+                </div>
+              </li>
+
+              <li data-filter="body-treatments">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-7.jpg" width="90" height="90" alt="Backbone Massage"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Backbone Massage</h3>
+
+                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                  </div>
+
+                  <data class="card-price" value="43">$43</data>
+
+                </div>
+              </li>
+
+              <li data-filter="meditations">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-8.jpg" width="90" height="90" alt="Meditation & Massage"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Meditation & Massage</h3>
+
+                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                  </div>
+
+                  <data class="card-price" value="74">$74</data>
+
+                </div>
+              </li>
+
+            </ul>
 
           </div>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./images/03.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./images/04.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./images/05.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="gallery-card">
-
-                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
-                  <img src="./images/06.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Hair Cutting</h3>
-
-                  <p class="card-text">Barbers & Salon Services</p>
-
-                  <a href="#" class="card-btn" aria-label="Read more">
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
 
         </div>
       </section>

@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,11 +135,12 @@
             <li class="navbar-item">
               <a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a>
             </li>
-          
+
             <li class="navbar-item">
               <a href="about.html" class="navbar-link" data-nav-link>About</a>
             </li>
 
+    
           </ul>
         </nav>
 
@@ -146,117 +148,149 @@
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="#locations" class="btn has-before">
-          <span class="span">Our Location</span>
+        <a href="index.html" class="btn has-before">
+          <span class="span">Appointment</span>
 
           <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
         </a>
-
       </div>
     </div>
 
   </header>
-
+  
   <main>
     <article>
-
       <!-- 
-        - #HERO
+        - #GALLERY
       -->
 
-      <section class="section hero has-before has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./images/12.jpg')">
+      <section class="section gallery" id="gallery" aria-label="photo gallery" style="background-image: url(./images/08.jpg);
+      background-size: cover;">
         <div class="container">
 
-          <h1 class="h1 hero-title">About Us</h1>
+          <div class="title-wrapper">
 
-          <p class="hero-text">
-            Experience excellence in a truly luxurious atmosphere offering you the ultimate satisfaction 
-            in hair and beauty services with Salon Zero by Master Stylist Surith Rasantha who recognized worldwide as an international consultant and migrant stylist.
-            At Salon AURA, we take enormous pride in representing the highest standards in the hair industry.
-             We have confidence in excellence with a heart and our approach towards the hair, makeup, and other beauty
-              services are emulated and framed against a backdrop of clean-lined, industrial decor where new and unique creations are crafted, honed, and inspired by you, for you.
-            At Salon AURA, our committed group of beauticians, nails and skin specialists accompany innumerable long 
-            periods of involvement in the magnificence business. We endeavour to make each customer our best, whether
-             you are a new or returning client, our team of highly trained stylists are ready to make you look your absolute best.
-            "We want our salon to be a place where clients are treated with genuine warmth, a place where they can relax and feel good about themselves."
-          </p>
+            <div>
+              <h2 class="h2 section-title" style="color: rgb(240, 164, 66);">Latest Photo Gallery</h2>
 
-          <a href="servicees.html" class="btn has-before">
-            <span class="span">Explore Our Services</span>
+              <p class="section-text">
+                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
+                suspendisse
+              </p>
+            </div>
 
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
+            <a href="#" class="btn has-before">
+              <span class="span">Explore More Gallery</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./images/03.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Hair Cutting</h3>
+
+                  <p class="card-text">Barbers & Salon Services</p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./images/04.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Hair Cutting</h3>
+
+                  <p class="card-text">Barbers & Salon Services</p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./images/05.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Hair Cutting</h3>
+
+                  <p class="card-text">Barbers & Salon Services</p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./images/06.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Hair Cutting</h3>
+
+                  <p class="card-text">Barbers & Salon Services</p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
 
         </div>
       </section>
-
-      <!-- 
-        - #LOCATIONS
-      -->
-
-      <section class="section locations" id="locations" aria-label="locations">
-        <div class="container">
-
-          <h2 class="h2 section-title" style="text-align: center; color: rgb(247, 244, 237);">Our Locations</h2> <br><br>
-
-          <div class="map-section">
-            <img src="./images/13.jpg" alt="Map showing Salon Aura locations">
-          </div>
-
-          <div class="locations-section">
-            <div class="location">
-              <h3>Boralesgamuwa</h3>
-              <p>102 1/1, Colombo Road, Rattanapitiya, Boralesgamuwa 10290</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 77 009 957</p>
-            </div>
-            <div class="location">
-              <h3>Thalawathugoda</h3>
-              <p>1112/2, Thalangama South, Battaramulla</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 77 660 225</p>
-            </div>
-            <div class="location">
-              <h3>Kotahena</h3>
-              <p>290 George R. De Silva Mawatha, Colombo 01300, Sri Lanka</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 76 650 010</p>
-            </div>
-            <div class="location">
-              <h3>Wattala</h3>
-              <p>1 Sri Wickrama Mawatha, Wattala 11300, Sri Lanka</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 77 055 055</p>
-            </div>
-            <div class="location">
-              <h3>Nugegoda</h3>
-              <p>389 High Level Rd, Nugegoda, Sri Lanka</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 11 282 052</p>
-            </div>
-            <div class="location">
-              <h3>Kiribathgoda</h3>
-              <p>71 Colombo - Kandy Rd, Kiribathgoda 11300, Sri Lanka</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 77 009 957</p>
-            </div>
-            <div class="location">
-              <h3>Kandana</h3>
-              <p>67 Negombo Rd, Kandana, Sri Lanka</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 77 712 017</p>
-            </div>
-            <div class="location">
-              <h3>Wellawatta</h3>
-              <p>4, 1/1 Collingwood Place, Colombo 00600, Sri Lanka</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 77 420 044</p>
-            </div>
-            <div class="location">
-              <h3>Dehiwala</h3>
-              <p>45/1 Hill St, Dehiwala-Mount Lavinia 10350, Sri Lanka</p>
-              <p><ion-icon name="call-outline"></ion-icon> +94 77 722 022</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
     </article>
   </main>
+
+
+
+
 
   <!-- 
     - #FOOTER
@@ -277,8 +311,10 @@
           <form action="" class="input-wrapper">
 
             <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
+
             <button type="submit" class="btn has-before">
               <span class="span">Subscribe Now</span>
+
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
 
@@ -445,6 +481,11 @@
     </div>
   </footer>
 
+
+
+
+
+
   <!-- 
     - #BACK TO TOP
   -->
@@ -452,6 +493,10 @@
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a>
+
+
+
+
 
   <!-- 
     - custom js link
